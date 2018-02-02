@@ -307,7 +307,7 @@ namespace RediSessionLibrary
             Boolean b = (Boolean)arg;
             byte[] buf = new byte[2];
             buf[0] = (byte)TypeCode.Boolean;
-            buf[1] = b ? (byte)0 : (byte)1;
+            buf[1] = b ? (byte)1 : (byte)0;
             return buf;
         }
 
